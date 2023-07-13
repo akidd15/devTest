@@ -1,3 +1,11 @@
 h1 {
     text-align: center;
 }
+
+.container {
+    margin-inline: center;
+}
+
+#timer {
+    display: flex;
+}
