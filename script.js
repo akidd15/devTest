@@ -24,5 +24,5 @@ setTime();
 
 buttonEl.addEventListener('click', function (event) {
     event.preventDefault();
-    textAreaEl.valie = "";
+    textAreaEl.value = "";
 }
