@@ -1,11 +1,32 @@
+
 h1 {
-    text-align: center;
-}
-
-.container {
-    margin-inline: center;
-}
-
-#timer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
     display: flex;
+    color:darkgreen;
+    background-color: lightgreen;
+}
+
+.btn-grid {
+    display:flex;
+    width: 100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
