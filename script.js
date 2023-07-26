@@ -1,28 +1,23 @@
-//var timerEl = document.getElementById(".timer");
-//var mainEL = document.getElementById("#container");
-//var secondsLeft = 60;
-//var buttonEl = document.getElementById("#button")
-//var textAreaEl = document.getElementById("#text-area")
+var startButton = document.getElementById("#start")
+//startButton.addEventListener("click",startGame);
+var questions = [
+    {  questions: "What is the skeleton of any website?",
+        answers: 
+    { text:"html", correct:true,
+    text:"javascript", correct:false}
+}
+]
 
-//function setTime () {
-    //var timerInterval = setInterval(function) {
-        //secondsLeft--;
-        //timerEl.textContent = secondsLeft; + "Oops! You didn't answer all the questions! Check out your score."
+function startGame() {
+startButton.classList.add("hide")
+questionsContinerElement.classList.remove("hide")
+console.log("started")
+}
 
-        //if (secondsLeft === 0 && // questions not answered) {
-            //clearInterval(timerInterval);
-            //sendMessage();  
-        //}
-    //}, 1);
-//}
+function nextQuestion() {
 
-//function sendMessage() {
-    //timerEl.textContent = "";
-//}
+}
 
-//setTime();
+function selectAnswer() {
 
-//buttonEl.addEventListener('click', function (event) {
-    //event.preventDefault();
-    //textAreaEl.value = "";
-//}
+}
