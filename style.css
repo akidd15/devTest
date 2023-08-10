@@ -96,3 +96,6 @@ h1 {
     border-color: white;
 }
 
+.hide {
+display: none;
+}
