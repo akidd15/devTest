@@ -3,12 +3,14 @@
 //add all questions
 //add timer?
 //start game
-
-const startButton = document.getElementById("start")
-let question = document.getElementById("question")
-let testQuestion = [
+var currentQuestionIndex
+var questionContainer = document.getElementById("question-container")
+var nextButton = document.getElementById("next")
+var startButton = document.getElementById("start")
+var question = document.getElementById("question")
+var testQuestion = [
     {
-        question: "what is the skelton of web development?",
+        question: "what is the 'skeleton' of web development?",
         answers: [
             { text: "HTML", correct:true },
              { text: "JavaScript", correct:false },
@@ -17,26 +19,32 @@ let testQuestion = [
         ]
     }
 ]
-
 startButton.addEventListener('click', startGame);
 
 function startGame() {
 console.log('started')
 startButton.classList.add("hide")
-question.classList.remove("hide")
-setNextQuestion()
+questionContainer.classList.remove("hide")
+currentQuestionIndex = 0
+setNextQuestion();
 
 }
 
 function setNextQuestion () {
-showQuestion(testQuestion)
+    showQuestion(currentQuestionIndex)
+    JSON.stringify(testQuestion);
+console.log("next question")
+return;
 }
 
-function showQuestion(question) {
-    question.innerText = testQuestion.question
-    console.log(question)
+function showQuestion() {
+    //testQuestion.innerText = question.question
+    console.log("show Question")
+    
 }
 
 function selectNextAnswer () {
 
 }
+
+
