@@ -1,4 +1,3 @@
-# devTest
 # Web Developers Test
 
 ## This is a timed test with questions related to web developement.
@@ -10,4 +9,4 @@ N/A
 Click start and answer each question. If the answer is incorrect, time will be subtracked from the test.
 
 ## License
-MIT
+N/A
